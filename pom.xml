@@ -130,7 +130,7 @@
         <cxf.version>3.0.4</cxf.version>
     </properties>
     <build>
-        <finalName>awsdevopstest</finalName>
+        <finalName>gopi</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
