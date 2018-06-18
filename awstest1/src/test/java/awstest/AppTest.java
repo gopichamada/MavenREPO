@@ -1,4 +1,4 @@
-package devops;
+package awstest;
 
 import static org.junit.Assert.assertTrue;
 
