@@ -1,7 +1,0 @@
-<project name="awsdevopstest" default="WAR-build" basedir=".">
-	<description>awsdevopstest - Build file</description>
-
-	<import file="buildProperties.xml"/>
-	<import file="buildTasks.xml"/>
-
-</project>
