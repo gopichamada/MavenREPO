@@ -13,16 +13,6 @@ pipeline {
 				}
 			}
 
-			stage('three') {
-				when {	
-					branch "master"
-					
-				}
-				steps {
-					echo "hello"
-				}
-			}
-			
 			stage('four') {
 					parallel {
 						stage('Unit Test') {
