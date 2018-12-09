@@ -16,7 +16,7 @@ pipeline {
 			stage('three') {
 				when {	
 					not {
-						branch "Masternew"
+						branch "master"
 					}
 				}
 				steps {
