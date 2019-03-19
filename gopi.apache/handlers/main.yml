@@ -1,0 +1,6 @@
+---
+- name: restart rhel apache
+  service:
+    name: "{{apache_package_rhel}}"
+    state: restarted
+# handlers file for gopi.apache

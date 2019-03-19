@@ -1,0 +1,4 @@
+---
+apache_package_rhel: httpd
+apache_homepage_path: /var/www/html/index.html
+# vars file for gopi.apache

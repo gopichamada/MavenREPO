@@ -1,0 +1,21 @@
+---
+- name: install apache on rhel
+  yum:
+    name: "{{apache_package_rhel}}"
+    state: present
+  when: ansible_os_family == "RedHat" 
+- name: set service name for rhel
+  set_fact:
+    apache_package: "{{apache_package_rhel}}"
+  when: ansible_os_family == "RedHat"
+- name: service enable and start
+  service:
+    name: "{{apache_package}}"
+    enabled: yes
+    state: started
+- name: test by print
+  debug:
+    msg: firing notification for redhat
+  notify: restart rhel apache
+  when: ansiblel_os_family == "RedHat"
+# tasks file for gopi.apache
